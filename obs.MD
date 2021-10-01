@@ -30,3 +30,13 @@ root@2ece86e0636c:/usr/share/nginx/html# ls
 50x.html  index.html
 root@2ece86e0636c:/usr/share/nginx/html# cat index.html
 <h1>Wallace Machado</h1>root@527808e1df7b:/usr/share/nginx/html#
+
+# CMD comando a ser executado e pode ser substituido na excecussão via bash
+
+# ENTRYPOINT não pode ser substituido na execussão pelo BASH
+
+
+wallacelinux@wallacelinux-ThinkPad-T430:~/Documentos/material_estudos_ti/docker/example-dockerfile$ docker run --rm wallacemachado/hello 
+Hello  world
+wallacelinux@wallacelinux-ThinkPad-T430:~/Documentos/material_estudos_ti/docker/example-dockerfile$ docker run --rm wallacemachado/hello wallace
+Hello  wallace
